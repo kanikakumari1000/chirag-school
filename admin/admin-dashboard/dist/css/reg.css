@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: antiquewhite;
+}
+.container{
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    border-radius: 6px;
+    padding: 30px;
+    margin: 0 15px;
+    background-color: white;
+    box-shadow: 0 5px 10px black;
+}
+.container header{
+    position: relative;
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+}
+.container header::before{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 3px;
+    width: 29px;
+    border-radius: 8px;
+    background-color: rgb(55, 55, 138);
+}
+.container form{
+    position: relative;
+    margin-top: 15px;
+    min-height: 490px;
+    background-color: #f2f2f2;
+}
+.container form .details{
+    margin-top: 30px;
+}
+.container form .details .ID{
+    margin-top: 10px;
+}
+.container form .title{
+    font-size:20px;
+    font-weight: 500;
+    margin: 6px 0 ;
+    color: #333;
+    text-decoration: underline;
+}
+.container form .fields{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+ .fields .input-field{
+    display: flex;
+    width: calc(100% / 3 - 15px);
+    flex-direction: column;
+    margin: 4px 0;
+ }
+ .input-field label{
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+ }
+ .input-field input{
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    padding: 0 15px;
+    height: 35px;
+    margin: 8px 0;
+ }
+ .input-field input[type="date"]{
+     color: #707070;
+ }
+
+.container form button, .nxtbtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    max-width: 200px;
+    width: 100%;
+    color: white;
+    border-radius: 10px;
+    margin: 24px 0;
+   background-color: rgb(55, 55, 138);
+   transition: all 0.3s ease-out;
+}
+form button:hover{
+    background-color: rgb(174, 189, 174);
+}
+
+
+
+ form .form-control{
+    height: 35px;
+    width: 100%;
+ }
+
+
+
+
+
+
+
+ /* 
+
+.container form .Parents{
+    margin: 0px;
+}
+.container form .Parents .title{
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+}
+.button{
+    background-color: black;
+    color:white;
+    height: 30px;
+    width: 70px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: green;
+    border-radius: 10px;
+} */
